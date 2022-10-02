@@ -1,0 +1,14 @@
+﻿'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Users\lacro\source\repos\cst116-lab0-debugging-DaBoochillin\Ch 5 Debugging Project\x64\Debug\Ch 5 Debugging Project.exe'. Symbols loaded.
+'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Windows\System32\ntdll.dll'. 
+'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Windows\System32\kernel32.dll'. 
+'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Windows\System32\KernelBase.dll'. 
+'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Windows\System32\msvcp140d.dll'. 
+'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140d.dll'. 
+'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Windows\System32\vcruntime140_1d.dll'. 
+'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Windows\System32\ucrtbased.dll'. 
+The thread 0x1ac4 has exited with code 0 (0x0).
+'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Windows\System32\kernel.appcore.dll'. 
+'Ch 5 Debugging Project.exe' (Win32): Loaded 'C:\Windows\System32\msvcrt.dll'. 
+The thread 0x5090 has exited with code 0 (0x0).
+The thread 0x25a4 has exited with code 0 (0x0).
+The program '[11120] Ch 5 Debugging Project.exe' has exited with code 0 (0x0).

@@ -16,6 +16,10 @@
 *    the current line being that cout statement, Step Into again.
 * 6) What happened? Where are we now? What is all of this nasty
 *    looking code?
+* *******************************************************************************************************************************************
+                         After the first cout statement we are at the line of code were the variable money is displayed in the console window. 
+                         Money appears to be a float type integer with a value of 123.449997 It shows up in the watch section of the code. 
+  *******************************************************************************************************************************************
 * 7) Remember, stepping into a predefined routine takes you to the
 *    code for that routine. If the debugger can't find the code it
 *    will show the assembly code for that routine.
@@ -25,6 +29,9 @@
 *    line.
 * 10) Step over the next cout statement. Now look at the console
 *     window. What was printed?
+* *******************************************************************************************************************************************
+                        The value shown in the watch was printed rounded to 2 decimal points.    
+  *******************************************************************************************************************************************
 * 11) Select Stop Debugging either from the Debug menu or from your
 *     toolbar.
 *
@@ -38,12 +45,20 @@
 * 5) Notice that the current line of execution is now at the
 *    calculation.
 * 6) Look at your watch. What is the value of money?
+* ********************************************************************************************************************************************
+*               123.449997                       
+* ********************************************************************************************************************************************
 * 7) Hover your mouse pointer over raise. What is its value?
+* ********************************************************************************************************************************************
+*               0.100000001                      
+* ********************************************************************************************************************************************
 * 8) Step over the calculation. Notice the watch on money is now
 *    red. This designates that the variable just changed its value.
 * 9) What happened to our money? I thought a raise was supposed
 *    to increase our money? Stop debugging and fix the calculation.
-*
+* ********************************************************************************************************************************************
+*               Our money was multiplied by 0.1 this reducing the overall amount we have.                       
+* ********************************************************************************************************************************************
 * Debugging Exercise 3
 *
 * 1) Choose Disable All Breakpoints from the Debug menu.
@@ -59,6 +74,7 @@
 
 #include <iostream>
 #include <iomanip>
+
 using std::cout;
 using std::cin;
 using std::endl;
@@ -70,23 +86,28 @@ int main()
 
     cout << "You have $";
     cout << money << endl;
-    /* *******************************************************************************************************************************************
-                         After the first cout statement we are at the line of code were the variable money is displayed in the console window. 
-                         Money appears to be a float type integer with a value of 123.449997 It shows up in the watch section of the code. 
-        ******************************************************************************************************************************************
-    */ 
+  
     // Breakpoint 1
     // Put a breakpoint on the following line
-    cout << "Enter percent raise: "; 
-    /*  *******************************************************************************************************************************************
-                        The value shown in the watch was printed rounded to 2 decimal points.    
-        *******************************************************************************************************************************************/
+    
+    while (true) {
+    cout << "Enter percent raise: ";
     cin >> raise;
+        if (raise >= 1)
+        {
+            cout << "Please enter a value between 0 and 1";
+        }
+        else if (raise <= 0) {
+            cout << "Please enter a value between 0 and 1";
+        }
+        else {
+            raise = raise + 1;
+            money = money * raise;
 
-    money = money * raise;
-
-    cout << "After your raise you have $";
-    cout << money << endl;
-
+            cout << "After your raise you have $";
+            cout << money << endl;
+            return 0;
+        }
+    }
     return 0;
  }
