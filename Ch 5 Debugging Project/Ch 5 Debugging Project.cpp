@@ -70,10 +70,17 @@ int main()
 
     cout << "You have $";
     cout << money << endl;
-
+    /* *******************************************************************************************************************************************
+                         After the first cout statement we are at the line of code were the variable money is displayed in the console window. 
+                         Money appears to be a float type integer with a value of 123.449997 It shows up in the watch section of the code. 
+        ******************************************************************************************************************************************
+    */ 
     // Breakpoint 1
     // Put a breakpoint on the following line
-    cout << "Enter percent raise: ";
+    cout << "Enter percent raise: "; 
+    /*  *******************************************************************************************************************************************
+                        The value shown in the watch was printed rounded to 2 decimal points.    
+        *******************************************************************************************************************************************/
     cin >> raise;
 
     money = money * raise;
@@ -82,4 +89,4 @@ int main()
     cout << money << endl;
 
     return 0;
-}
+ }
