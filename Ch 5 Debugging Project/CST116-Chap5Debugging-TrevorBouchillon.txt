@@ -1,0 +1,6 @@
+You have $123.45
+Enter percent raise: .1
+After your raise you have $135.795
+
+C:\Users\lacro\source\repos\cst116-lab0-debugging-DaBoochillin\Ch 5 Debugging Project\x64\Debug\Ch 5 Debugging Project.exe (process 19608) exited with code 0.
+Press any key to close this window . . .

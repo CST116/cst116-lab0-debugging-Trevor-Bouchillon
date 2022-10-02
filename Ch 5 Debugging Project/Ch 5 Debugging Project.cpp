@@ -1,5 +1,10 @@
 /********************************************************************
 * File: Chap_5_Debugging.cpp
+* 
+* Trevor Bouchillon
+* CST 116
+* Chapter 5&6 Lab
+* 
 *
 * General Instructions: Complete each step before proceeding to the
 * next.
