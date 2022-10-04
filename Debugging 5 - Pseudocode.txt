@@ -1,0 +1,17 @@
+Define amount of money you have to 123.45
+Print out "You have $"
+Print out the variable money
+
+Create loop to make sure user enters a valid percentage. 
+print out "Enter percent raise:"
+Intake value for variable "raise"
+
+	If value is great than 1
+		print out "Please enter a value between 0 and 1"
+	else if value is less than 1
+		print out "Please enter a value between 0 and 1"
+	else
+		add 1 to value of "raise"
+		set variable "money" by multipling "money" and "raise"
+Print out "after raise you have $"
+print out value of money. 
